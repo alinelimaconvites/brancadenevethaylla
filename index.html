@@ -75,9 +75,34 @@ video {
 
 <div id="contador"></div>
 
-<video id="video">
-  <source src="convite.mp4" type="video/mp4">
-</video>
+<div class="container">
+  <video id="video" playsinline style="width:100%; height:100vh; object-fit:cover;">
+    <source src="convite.mp4" type="video/mp4">
+  </video>
+
+  <div class="links">
+    <a href="https://wa.me/SEUNUMERO" class="btn confirmar"></a>
+    <a href="https://maps.google.com" class="btn local"></a>
+  </div>
+</div>
+
+  .container {
+  position: relative;
+}
+
+.links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  position: absolute;
+  background: rgba(255,0,0,0.3); /* TEMPORÁRIO pra você enxergar */
+  border: 2px solid white;
+}
 
 <audio id="musica" src="musica.mp3"></audio>
 
