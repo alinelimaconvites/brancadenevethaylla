@@ -73,24 +73,57 @@ video {
   <button onclick="abrir()">Abrir convite ✨</button>
 </div>
 
+.btn {
+  background: rgba(255,0,0,0.4); /* vermelho transparente */
+  border: 2px solid white;
+}
+
+<div class="links">
+  <a href="https://wa.me/558199610623" target="_blank" class="btn confirmar"></a>
+  <a href="https://maps.google.com" target="_blank" class="btn local"></a>
+</div>
+
+<style>
+.links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* botão confirmar */
+.confirmar {
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  width: 60%;
+  height: 8%;
+}
+
+/* botão localização */
+.local {
+  position: absolute;
+  top: 85%;
+  left: 20%;
+  width: 60%;
+  height: 8%;
+}
+</style>
+
 <div id="contador"></div>
 
 <video id="video" controls playsinline style="width:100%">
   <source src="convite.mp4" type="video/mp4">
 </video>
 
-<audio id="musica" src="musica.mp3"></audio>
-
-<div class="botoes">
-  <a href="#">💌 Confirmar Presença</a>
-  <a href="#">📍 Localização</a>
-</div>
+\\<audio id="musica" src="musica.mp3"></audio>
 
 <script>
 function abrir(){
   document.getElementById("start").style.display = "none";
   document.getElementById("video").play();
-  document.getElementById("musica").play();
+ \\ document.getElementById("musica").play();
 }
 
 /* contador */
