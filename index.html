@@ -75,11 +75,16 @@ video {
 
 <div id="contador"></div>
 
-<video id="video" controls playsinline style="width:100%">
+<video id="video">
   <source src="convite.mp4" type="video/mp4">
 </video>
 
 <audio id="musica" src="musica.mp3"></audio>
+
+<div class="botoes">
+  <a href="#">💌 Confirmar Presença</a>
+  <a href="#">📍 Localização</a>
+</div>
 
 <script>
 function abrir(){
@@ -89,7 +94,7 @@ function abrir(){
 }
 
 /* contador */
-const dataEvento = new Date("2026-05-17");
+const dataEvento = new Date("2026-12-25");
 setInterval(() => {
   const agora = new Date();
   const diff = dataEvento - agora;
