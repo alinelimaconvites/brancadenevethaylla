@@ -12,7 +12,7 @@ body {
   text-align: center;
 }
 
-/* abertura */
+  /* abertura */
 #start {
   position: fixed;
   width: 100%;
@@ -32,54 +32,32 @@ body {
   background: gold;
   box-shadow: 0 0 20px gold;
 }
-
-/* vídeo */
-video {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  position: relative;
-  z-index: 1;
-}
-
-/* container */
-.container {
+    .container {
   position: relative;
 }
 
-/* links por cima */
 .links {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 10;
 }
 
-/* botão invisível */
 .btn {
   position: absolute;
-  background: rgba(255,0,0,0.4); /* TEMPORÁRIO */
+  background: rgba(255,0,0,0.3); /* TEMPORÁRIO pra você enxergar */
   border: 2px solid white;
 }
 
-/* POSIÇÃO (ajuste depois) */
-.confirmar {
-  top: 75%;
-  left: 10%;
-  width: 80%;
-  height: 8%;
+/* vídeo */
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
-.local {
-  top: 85%;
-  left: 10%;
-  width: 80%;
-  height: 8%;
-}
-
-/* botões extras */
+/* botões */
 .botoes {
   position: fixed;
   bottom: 20px;
@@ -114,20 +92,17 @@ video {
 
 <div id="contador"></div>
 
-<!-- CONTAINER CORRETO -->
 <div class="container">
-
-  <video id="video" playsinline>
+  <video id="video" playsinline style="width:100%; height:100vh; object-fit:cover;">
     <source src="convite.mp4" type="video/mp4">
   </video>
-
+  
   <div class="links">
-    <a href="https://wa.me/558199610623" class="btn confirmar"></a>
+    <a href="https://wa.me/SEUNUMERO" class="btn confirmar"></a>
     <a href="https://maps.google.com" class="btn local"></a>
   </div>
-
 </div>
-
+</style>
 <audio id="musica" src="musica.mp3"></audio>
 
 <div class="botoes">
